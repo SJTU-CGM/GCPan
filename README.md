@@ -33,9 +33,9 @@ BlackDomain上配置多个key，测试方法：
 
 /share/home/yyqiao/project/SJTU-CGM/GCPan
 ```
-git pull git@github-cgm-gcpan:SJTU-CGM/GCPan.git
-git add newFile
-git commit -m "message"
-git push
+	git pull git@github-cgm-gcpan:SJTU-CGM/GCPan.git
+	git add newFile
+	git commit -m "message"
+	git push
 
 ```
