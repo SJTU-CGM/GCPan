@@ -1,0 +1,21 @@
+body {
+	background:#F5F5F5;
+	margin-bottom:100px;
+	/*margin-right:40px;
+	margin-left:40px;*/
+	
+}
+
+.container {
+	width: 1270px;
+}
+
+#sumbox {
+        position:fixed;
+        background:url(../pic/container_bg.png);
+        height:26px;
+        bottom:0px;
+        left:0px;
+        width:100%;
+        /*color:white !important;*/
+}

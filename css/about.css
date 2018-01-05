@@ -1,0 +1,21 @@
+body {
+	margin-bottom:100px;
+}
+
+p {
+    font-size: 17px;
+}
+
+li {
+	font-size: 16px;
+}
+
+#gotop{
+    display:none;
+    width:55px;
+    height:55px;
+    position:fixed;
+    right:50px;
+    bottom:50px;
+    background:url(../pic/backtop.png) no-repeat -70px 0px;
+}
