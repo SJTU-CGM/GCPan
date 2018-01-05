@@ -11,8 +11,13 @@
 /pic
 `
 
-BlackDomain上配置多个key，提交git可参照下列命令：
+BlackDomain上配置多个key，测试方法：
+ssh -T git@github.com
+ssh -T git@github-cgm-gcpan
+reference:https://www.jianshu.com/p/12badb7e6c10
 
+
+提交git可参照下列命令：
 1.从头提交
 git init
 git pull git@github-cgm-gcpan:SJTU-CGM/GCPan.git
@@ -27,4 +32,4 @@ git push -u cgm-origin master
 git pull git@github-cgm-gcpan:SJTU-CGM/GCPan.git
 git add newFile
 git commit -m "message"
-git push -u cgm-origin master
+git push
