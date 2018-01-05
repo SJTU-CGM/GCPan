@@ -1,0 +1,58 @@
+"use strict";
+
+function toolbarRemoveTracks()
+{
+    JBrowse.setSelection([]);
+}
+
+
+function toolbarScreenshot()
+{
+    var JBROWSE = JBrowse.getElement();
+    var body = document.getElementsByTagName("body")[0];
+    var form = document.createElement("form");
+    form.target = "_blank";   // open new page for download
+    form.action = "./screenshot.php";
+    form.method = "get";
+    form.style = "display: none;";
+    body.appendChild(form);
+  
+    var urlElem = document.createElement("input");
+    form.appendChild(urlElem);
+    urlElem.name = "url";
+    urlElem.type = "text";
+    urlElem.value = JBROWSE.contentWindow.location.href;
+    // because phantom.js cannot open cgm ..., change url to 192. ...
+    urlElem.value = urlElem.value.replace("cgm.sjtu.edu.cn", "192.168.1.99");
+
+    var widthElem = document.createElement("input");
+    form.appendChild(widthElem);
+    widthElem.name = "width";
+    widthElem.type = "number";
+    widthElem.value = JBROWSE.clientWidth;
+  
+    var heightElem = document.createElement("input");
+    form.appendChild(heightElem);
+    heightElem.name = "height";
+    heightElem.type = "number";
+    heightElem.value = JBROWSE.clientHeight;
+
+    console.log(urlElem.value, widthElem.value, heightElem.value);
+  
+    form.submit();
+    body.removeChild(form);
+}
+
+
+function toolbarShare()
+{
+    var url = window.location.href;
+    window.prompt("Copy to clipboard: Ctrl+C, Enter", url);
+}
+
+
+function toolbarHelp()
+{
+    var url = "../about.php#visualization";
+    window.open(url);
+}

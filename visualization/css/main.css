@@ -1,0 +1,64 @@
+#container, #container div, #container iframe {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#container, #tree, #jbrowse-container {
+    box-sizing: border-box;
+}
+
+
+/* vertical */
+html, body {
+    height: 100%;
+}
+body {
+	display: flex; display: -webkit-flex;
+	flex-direction: column;
+}
+#container {
+	-webkit-flex: auto;
+	flex: auto;
+}
+#jbrowse-container {
+	display: flex; display: -webkit-flex;
+	flex-direction: column;
+}    
+#toolbar {
+    height: 2em;
+}
+#jbrowse {
+	-webkit-flex: auto;
+	flex: auto;
+}
+
+/* horizontal */
+#container {
+	display: flex; display: -webkit-flex;
+	flex-direction: row;
+}
+#tree {
+	-webkit-flex: auto;
+	flex: auto;
+    width: calc(30% - 15px);
+}
+#toggle-tree {
+    border: 0;
+    padding: 0;
+    width: 15px;
+}
+#jbrowse-container {
+	-webkit-flex: auto;
+	flex: auto;
+    width: 70%;
+}
+#jbrowse {
+    width: 100%;
+}
+
+/* others */
+#toolbar > button {
+    text-transform: capitalize;
+}
+

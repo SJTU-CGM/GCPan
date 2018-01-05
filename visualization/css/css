@@ -1,0 +1,5 @@
+  /ssh:gzlv@202.120.45.101#3222:/var/www/html/3kricedb/visualization/css:
+  total 32
+  drwxr-xr-x 2 gzlv gzlv 4096 Jul  2 14:45 .
+  drwxrwxr-x 5 gzlv gzlv 4096 Jul  2 14:42 ..
+  -rw-rw-r-- 1 gzlv gzlv   91 Jul  2 14:45 main.css
